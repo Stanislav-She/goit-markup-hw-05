@@ -161,11 +161,10 @@ img {
 }
 
 .contacts-list-studio {
-  display: inline;
   padding-right: 50px;
 }
 
-.link {
+.linkport {
   color: var(--brand-color-two);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -177,8 +176,7 @@ img {
 }
 
 .contacts-icon {
-  width: 16px;
-  height: 12px;
+  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -310,7 +308,6 @@ img {
 }
 
 .activity-list-studio {
-  
   width: 370px;
 }
 
@@ -322,24 +319,21 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-position: absolute;
-/* display: flex;
-align-items: center;
-justify-content: center; */
-width: 370px;
-height: 70px;
-transform: translate(0%, -100%);
-background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  transform: translate(0%, -100%);
+  background: rgba(47, 48, 58, 0.8);
 }
 
 .activity-text-studio {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* --- ACTIVITY --- */
@@ -420,7 +414,6 @@ background: rgba(47, 48, 58, 0.8);
 .team-socnet-link:hover,
 .team-socnet-link:focus {
   background-color: var(--brand-color);
-  color: var(--brand-color-three);
 }
 
 .social-icon {
@@ -582,7 +575,6 @@ background: rgba(47, 48, 58, 0.8);
 .team-footsocnet-link:hover,
 .team-footsocnet-link:focus {
   background-color: var(--brand-color);
-  color: var(--brand-color-three);
 }
 
 /* --- FOOTER --- */
@@ -633,7 +625,8 @@ background: rgba(47, 48, 58, 0.8);
 }
 
 .contacts-list-portfolio > .link-portfolio {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 .link-portfolio {
@@ -752,6 +745,37 @@ background: rgba(47, 48, 58, 0.8);
 
 .work-item-portfolio {
   width: 370px;
+}
+
+.work-cover-portfolio {
+  position: relative;
+}
+
+.work-covertext-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  transform: translate(0%, -100%);
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  transition: 250ms opacity linear;
+  /* cubic-bezier: (0.4, 0, 0.2, 1); */
+}
+
+.work-text-portfolio {
+  width: 322px;
+  height: 168px;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.work-item-portfolio:hover .work-covertext-portfolio {
+  opacity: 1;
 }
 
 .work-item-portfolio:hover,
